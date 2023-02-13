@@ -21,4 +21,15 @@ class ContaBancaria
 
         ];
     }
+
+
+    public function obterSaldo()
+    {
+        return "Ola eu sou metodo obter acesso";
+    }
 }
+
+$conta = new ContaBancaria();
+
+var_dump($conta->obterSaldo());
+
