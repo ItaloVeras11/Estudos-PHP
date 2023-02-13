@@ -19,7 +19,8 @@ try{
     $status = validarUsuario($usuario);
 }catch(Exception $e){
     echo $e->getMessage();
-    die();
+}finally{
+    echo "Status da Operaçao: " . (int)$status;
 }
 
 
